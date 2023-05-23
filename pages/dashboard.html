@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Leo Rivero | Dashboard</title>
+</head>
+<body>
+   <!-- --> <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../img/2.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Leo Rivero</span>
+                    <span class="profession">Administracion</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./dashboard.html">
+                            
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/clients.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Clients</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/map.html">
+                            <i class='bx bxs-map icon' ></i>
+                            <span class="text nav-text">Map</span>
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                
+                
+            </div>
+        </div>
+
+    </nav>
+
+    
+
+    <section class="home">
+        <div class="container">
+            <div class="left">
+                <div><h2>Invoices</h2></div>
+            </div>
+            <div class="right">
+
+                <a class="btninvoice2" href="#"><p class="pnav">Filter</p></a>
+                <a class="btninvoice" href="#" id="NewInvoiceModal"><p class="pnav" >New Invoice</p></a>
+                
+                <div class="classBackground" id="modalBackground"> 
+                    <div class="classBox" id="modalBox">
+                        <div class="new-invoice-form new-invoice-parent">
+
+                            <div class="new-invoice-div1">
+                                    <p class="new-invoice-titleinvoice">New Invoice</p>
+                                    <p class="new-invoice-invoicenumber"><span>#</span>00001</p>
+                            </div>
+                    
+                            <div class="new-invoice-div2">
+                                <p class="new-invoice-sectiontitle">Contract Information</p>
+                                <input class="new-invoice-firstinput" type="text" name="#" id="#" placeholder="Delivery adress">
+                                <input type="date" name="#" id="#" placeholder="Delivery adress">
+                            </div>
+                    
+                            <div class="new-invoice-div3">
+                                <p class="new-invoice-sectiontitle">Client Information</p>
+                                <div class="new-invoice-div3section">
+                                    <input class="new-invoice-div3input" type="###" name="#" id="#" placeholder="Client name">
+                                    <button>New Client</button>
+                                </div>
+                                <div class="new-invoice-checkboxsection">
+                                    <input class="new-invoice-checkbox" type="checkbox" id="ClientPay" name="Client" value="Pay">
+                                    <label for="ClientPay">The person who placed the order wont pay.</label><br>
+                                </div>
+                                <div class="new-invoice-checkboxsection">
+                                    <input class="new-invoice-checkbox" type="checkbox" id="ClientVAT" name="Client" value="Pay">
+                                    <label for="ClientVAT">The client requires an invoice with VAT (21%)</label><br>
+                                </div>
+                                
+                            </div>
+                    
+                            <div class="new-invoice-div4">
+                                <p class="new-invoice-sectiontitle">Items Information</p>
+                                <div4 class="new-invoice-div4section">
+                                    <input class="new-invoice-inputitem" type="text" placeholder="Item">
+                                    <input class="new-invoice-itemnumber" type="number" placeholder="N°">
+                                    <button><i class='bx bx-check'></i></button>
+                                </div4>
+                                <button class="new-invoice-newitem">Add New Item</button>
+                            </div>
+                    
+                            <div class="new-invoice-div5">
+                                <div class="new-invoice-amountdue">
+                                    <p class="new-invoice-textamount">Amount Due</p>
+                                    <p class="new-invoice-total">$9000</p>
+                                </div>
+                                <div class="new-invoice-finalbuttons">
+                                    <button class="new-invoice-discard">Discard</button>
+                                    <button class="new-invoice-save">Save</button>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="classBackground2" id="modalBackground2"> 
+            <div class="classBox2" id="modalBox2">
+                <div class="formbody">
+
+                    <div class="form2 parent2">
+                        <div class="part1">
+                            <div class="part1left">
+                                <p class="titleinvoice">#0001</p>
+                                <p class="adress">Avenida Alem 1440, Bahia Blanca</p>
+                            </div>
+                            <div class="part1right">
+                                <button class="editbutton">Edit</button>
+                            <button class="statusbutton">Status</button>
+                            </div>
+                        </div>
+                
+                        <div class="gridinvoiceresume">
+                            <div class="colum1">
+                                <div>
+                                    <p class="textsubtitle">Invoice Date</p>
+                                    <p class="textinfo">20 Aug 2021</p>
+                                </div>
+                                <div class="paymentday">
+                                    <p class="textsubtitle">Payment Day</p>
+                                    <p class="textinfo ">27 Aug 2021</p>
+                                </div>
+                            </div>
+                            <div class="colum2">
+                            <p class="textsubtitle">Bill To</p>
+                            <p class="textinfo">Client name</p>
+                            <p class="textinfo">Clientname@email.com</p>
+                            <p class="textinfo">Celphone Number</p>
+                            </div>
+                            <div class="colum3">
+                            <p class="textsubtitle">Items Rent</p>
+                            <p class="textinfo">Volquete #80</p>
+                            </div>
+                        </div>
+                
+                        <div class="columns5">
+                           <div class="columinvoice1">
+                            <p class="titleresume">Item name</p>
+                            <p class="dataresume">Tipper #80</p>
+                           </div>
+                           <div class="columinvoice2">
+                            <p class="titleresume">Quantity</p>
+                            <p class="dataresume">1</p>
+                           </div>
+                           <div class="columinvoice3">
+                            <p class="titleresume">Weeks</p>
+                            <p class="dataresume">1</p>
+                           </div>
+                           <div class="columinvoice4">
+                            <p class="titleresume">Price/Week</p>
+                            <p class="dataresume">9000$</p>
+                           </div>
+                           <div class="columinvoice5">
+                            <p class="titleresume">Total</p>
+                            <p class="dataresume">$9000</p>
+                           </div>
+                        </div>
+                        
+                        <div class="amountdueresume">
+                            <p>Amount due</p>
+                            <p>9000$</p>
+                        </div>
+                
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="div1">
+                <div class="iconholder">
+                    <img src="../img/pending-icon.png" alt="">
+                </div>
+                <div class="textholder">
+                    <p class="titlecards">Pending</p>
+                    <p class="number">45</p>
+                </div>
+
+            </div>
+
+            <div class="div2index">
+                <div class="iconholder">
+                    <img src="../img/por-entregar-icon.png" alt="">
+                </div>
+                <div class="textholder">
+                    <p class="titlecards">Undelivered</p>
+                    <p class="number">7</p>
+                </div>
+
+            </div>
+
+            <div class="div3index">
+                <div class="iconholder bank">
+                    <img src="../img/bank2.png" alt="">
+                </div>
+                <div class="textholder">
+                    <p class="titlecards">For Charge</p>
+                    <p class="number">14</p>
+                </div>
+
+            </div>
+
+            <div class="div3index">
+                <div class="iconholder">
+                    <img src="../img/withdraw-icon.png" alt="">
+                </div>
+                <div class="textholder">
+                    <p class="titlecards">To Withdraw</p>
+                    <p class="number">3</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="orders-container">
+            <div class="div-1">
+                <p class="OrderNumber"><span>#</span>0001</p>
+                <p class="textgrey">Client Name</p>
+                <p class="textgrey">Tipper <span>#86</span></p>
+                
+            </div>
+
+            <div class="div-2">
+                <p>$18000</p>
+            </div>
+
+            <div class="status ready">
+                <a href="#" id="NewInvoiceModal2">Ready</a>
+            </div>
+            </div>
+        
+
+
+    </section>
+
+    <script src="../index.js">
+
+
+
+    </script>
+</body>
+</html>
+ 

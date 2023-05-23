@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/2.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Leo Rivero | Login</title>
+</head>
+<body class="sectionlogin">
+    <div class="loginform">
+        <img src="../img/blacklogo.png" alt="">
+        <form id="login-form">
+            <div class="marginbtm">
+                <p class="textloginform">User</p>
+                <div class="firstpart">
+                    
+                    <input type="text" class="inputlogin" id="username" name="username" placeholder="Enter here your username">
+                    <br>
+                </div>
+            </div>
+            
+            <p class="textloginform">Password</p>
+            <div class="secondpart">
+                
+                <input class="inputlogin" type="password" id="password" name="password" placeholder="Enter here your password">
+                <br>
+            </div>
+            <div class="finalpart">
+                <input type="submit" value="Log in">
+            </div>
+            
+          </form>
+    </div>
+    <script> 
+     const form = document.getElementById('login-form');
+
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if ((username === 'dolores' && password === 'rivero') || (username === 'juana' && password === 'rivero') || (username === 'guille' && password === 'spinsanti') || (username === 'leo' && password === 'rivero') || (username === 'carina' && password === 'spinsanti')) {
+    window.location.href = './pages/menu.html';
+    } else {
+    alert('Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.');
+    }
+    });
+
+    </script>
+</body>
+</html>
+ 

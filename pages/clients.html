@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../img/2.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Leo Rivero | Dashboard</title>
+</head>
+<body>
+    <!-- --> <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../img/2.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Leo Rivero</span>
+                    <span class="profession">Administracion</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./dashboard.html">
+                            
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/clients.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Clients</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/map.html">
+                            <i class='bx bxs-map icon' ></i>
+                            <span class="text nav-text">Map</span>
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                
+                
+            </div>
+        </div>
+
+    </nav>
+
+    
+
+    <section class="home">
+        <div class="container">
+            <div class="left">
+                <div><h2>Clients</h2></div>
+            </div>
+            <div class="right">
+
+                <a class="btninvoice2" href="#"><p class="pnav">Filter</p></a>
+                <a class="btninvoice" href="#" id="NewInvoiceModal"><p class="pnav" >New Client</p></a>
+            </div>
+        </div>
+
+        <div class="searchbar">
+            <input type="search" placeholder="Busca a tu cliente por nombre, apellido o telefono.">
+        </div>
+
+        <div class="clients-container">
+            <div class="clients-div-1">
+                <p class="clients-ClientName">Nombre Cliente</p>
+                <p class="clients-textgrey">Celphone Number</p>
+                <p class="clients-textgrey">Active Invoices</p>
+                <button class="clients-status" id="NewInvoiceModal2">Client Info</button>
+                
+            </div>
+            
+            </div>
+
+            
+    </section>
+<!--
+    MODAL BOTON NEW CLIENT
+-->
+<div class="classBackground" id="modalBackground"> 
+    <div class="classBox" id="modalBox">
+        <div class="new-client-form new-client-parent">
+
+            <div class="new-client-div1">
+                    <p class="new-client-titleclient">New Client</p>
+                    <p class="new-client-clientnumber"><span>N°</span>00001</p>
+            </div>
+    
+            <div class="new-client-div2">
+                <p class="new-client-sectiontitle">Client Information</p>
+                <input class="new-client-firstinput" type="text" name="#" id="#" placeholder="Client name">
+                <input class="new-client-firstinput" type="text" name="#" id="#" placeholder="Legal adress">
+                <input class="new-client-firstinput" type="number" name="#" id="#" placeholder="CUIT or DNI">
+                <input class="new-client-firstinput" type="number" name="#" id="#" placeholder="Celphone number">
+            </div>
+    
+            
+            <div class="new-client-div5">
+                
+                <div class="new-client-finalbuttons">
+                    <button class="new-client-discard">Discard</button>
+                    <button class="new-client-save">Save</button>
+                </div>
+            </div>
+    
+    </div>
+</div>
+</div>
+
+<!--
+    MODAL CLIENT STATUS
+-->
+<div class="classBackground" id="modalBackground2"> 
+    <div class="classBox" id="modalBox2">
+        <div class="client-status-form client-status-parent">
+
+            <div class="client-status-div1">
+                    <p class="client-status-titleclient">Client </p>
+                    <p class="client-status-clientnumber"><span>N°</span>00001</p>
+            </div>
+    
+            <div class="client-status-div2">
+                <p class="client-status-sectiontitle">Client Information</p>
+                <input disabled class="client-status-firstinput" type="text" name="#" id="#" placeholder="Nicolas Cossi">
+                <input disabled class="client-status-firstinput" type="text" name="#" id="#" placeholder="Leopoldo Lugones 443">
+                <input disabled class="client-status-firstinput" type="number" name="#" id="#" placeholder="20-44564367-6">
+                <input disabled class="client-status-firstinput" type="number" name="#" id="#" placeholder="291-4126578">
+            </div>
+    
+            
+            <div class="client-status-div5">
+                
+                <div class="client-status-finalbuttons">
+                    
+                    <button class="client-status-save">Go Back</button>
+                </div>
+            </div>
+    
+    </div>
+</div>
+</div>
+
+
+    <script src="../index.js">
+
+
+
+    </script>
+</body>
+</html>
+ 

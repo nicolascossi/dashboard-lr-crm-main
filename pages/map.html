@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Leo Rivero | Dashboard</title>
+</head>
+<body>
+   <!-- --> <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../img/2.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Leo Rivero</span>
+                    <span class="profession">Administracion</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./dashboard.html">
+                            
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/clients.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Clients</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/map.html">
+                            <i class='bx bxs-map icon' ></i>
+                            <span class="text nav-text">Map</span>
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                
+                
+            </div>
+        </div>
+
+    </nav>
+
+    
+
+    <section class="home">
+
+                <!-- MODAL RESUMEN --> 
+
+                <div class="classBackground" id="modalBackground"> 
+                    <div class="classBox" id="modalBox">
+                        <div class="formbody">
+        
+                            <div class="form2 parent2">
+                                <div class="part1">
+                                    <div class="part1left">
+                                        <p class="titleinvoice">#0001</p>
+                                        <p class="adress">Avenida Alem 1440, Bahia Blanca</p>
+                                    </div>
+                                    <div class="part1right">
+                                        <button class="editbutton">Edit</button>
+                                    <button class="statusbutton">Status</button>
+                                    </div>
+                                </div>
+                        
+                                <div class="gridinvoiceresume">
+                                    <div class="colum1">
+                                        <div>
+                                            <p class="textsubtitle">Invoice Date</p>
+                                            <p class="textinfo">20 Aug 2021</p>
+                                        </div>
+                                        <div class="paymentday">
+                                            <p class="textsubtitle">Payment Day</p>
+                                            <p class="textinfo ">27 Aug 2021</p>
+                                        </div>
+                                    </div>
+                                    <div class="colum2">
+                                    <p class="textsubtitle">Bill To</p>
+                                    <p class="textinfo">Client name</p>
+                                    <p class="textinfo">Clientname@email.com</p>
+                                    <p class="textinfo">Celphone Number</p>
+                                    </div>
+                                    <div class="colum3">
+                                    <p class="textsubtitle">Items Rent</p>
+                                    <p class="textinfo">Volquete #80</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="columns5">
+                                   <div class="columinvoice1">
+                                    <p class="titleresume">Item name</p>
+                                    <p class="dataresume">Tipper #80</p>
+                                   </div>
+                                   <div class="columinvoice2">
+                                    <p class="titleresume">Quantity</p>
+                                    <p class="dataresume">1</p>
+                                   </div>
+                                   <div class="columinvoice3">
+                                    <p class="titleresume">Weeks</p>
+                                    <p class="dataresume">1</p>
+                                   </div>
+                                   <div class="columinvoice4">
+                                    <p class="titleresume">Price/Week</p>
+                                    <p class="dataresume">9000$</p>
+                                   </div>
+                                   <div class="columinvoice5">
+                                    <p class="titleresume">Total</p>
+                                    <p class="dataresume">$9000</p>
+                                   </div>
+                                </div>
+                                
+                                <div class="amountdueresume">
+                                    <p>Amount due</p>
+                                    <p>9000$</p>
+                                </div>
+                        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="container-map">
+            <input type="text" placeholder="Search your contract, workshop or tipper by number">
+        </div>
+
+
+        <div class="container-map-info">
+
+            <div class="mapbox">
+                <p>Here will be the map</p>
+            </div>
+
+            <div class="info-box">
+                <div class="resume-info">
+                    <p class="titleinvoice resume-info-title">#0001</p>
+
+                    <p class="adress">Client Name</p>
+                    <p class="textinfo-map">Nicolas Cossi</p>
+
+                    <p class="adress">Contact Information</p>
+                    <p class="">291-4126578</p>
+                    <p class="textinfo-map">nicolasmartincossi@gmail.com</p>
+    
+                    <p class="adress">Adress</p>
+                    <p class="textinfo-map">Avenida Alem 1440</p>
+    
+                    <p class="adress">Invoice Day</p>
+                    <p class="textinfo-map">28/07/2023</p>
+    
+                    <p class="adress">Next Payment Day</p>
+                    <p class="textinfo-map">07/07/2023</p>
+    
+                    <p class="adress">Items</p>
+                    <p class="textinfo-map">Tipper #80</p>
+                </div>
+                
+                <div class="button-container-map">
+                    <a href="#" id="NewInvoiceModal">Ready</a>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <script src="../index.js">
+
+
+
+    </script>
+</body>
+</html>
+ 
