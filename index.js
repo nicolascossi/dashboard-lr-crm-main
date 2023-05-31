@@ -12,9 +12,9 @@ toggle.addEventListener("click" , () =>{
 sidebar.classList.toggle("close");
 })
 
-// MODALES ABRIR //
+// MODALES ABRIR // 
 
-const newInvoice = document.querySelector ("#NewInvoiceModal")
+ const newInvoice = document.querySelector ("#NewInvoiceModal")
 
 const modal = document.querySelector ("#modalBackground")
 newInvoice.addEventListener ("click", ( ) => {
@@ -41,16 +41,6 @@ statuInvoice.addEventListener ("click", ( ) => {
 modal2.addEventListener ("click",(e) => {
     if (e.target === modal2) modal2.classList.remove ("show2")
 })
-
-
-
-
-
-
-
-
-
-
 
 
 

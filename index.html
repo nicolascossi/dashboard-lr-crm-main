@@ -16,19 +16,12 @@
     <div class="loginform">
         <img src="../img/blacklogo.png" alt="">
         <form id="login-form">
-            <div class="marginbtm">
-                <p class="textloginform">User</p>
-                <div class="firstpart">
-                    
-                    <input type="text" class="inputlogin" id="username" name="username" placeholder="Enter here your username">
-                    <br>
-                </div>
-            </div>
             
-            <p class="textloginform">Password</p>
+            
+            <p class="textloginform">PIN</p>
             <div class="secondpart">
                 
-                <input class="inputlogin" type="password" id="password" name="password" placeholder="Enter here your password">
+                <input class="inputlogin" type="password" id="password" name="pin" placeholder="Enter here your pin">
                 <br>
             </div>
             <div class="finalpart">
@@ -43,10 +36,10 @@
     form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
+    
     const password = document.getElementById('password').value;
 
-    if ((username === 'dolores' && password === 'rivero') || (username === 'juana' && password === 'rivero') || (username === 'guille' && password === 'spinsanti') || (username === 'leo' && password === 'rivero') || (username === 'carina' && password === 'spinsanti')) {
+    if (password === '212802'){
     window.location.href = './pages/menu.html';
     } else {
     alert('Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.');
