@@ -2556,7 +2556,15 @@ p span {
 margin-bottom: 10px;
 }
 
+.order-list {
+    height: 100%;
+}
 
+
+.NEWorders-container {
+    display: flex;
+    justify-content: center;
+}
 
 
 

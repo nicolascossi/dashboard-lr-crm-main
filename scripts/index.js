@@ -12,6 +12,16 @@ toggle.addEventListener("click" , () =>{
 sidebar.classList.toggle("close");
 })
 
+
+// PRUEBA CREAR DIV ABAJO DEL CADA ORDEN
+const newOrder = document.querySelector('#btnOrder')
+
+newOrder.addEventListener("click", () => {
+    const newOrder = document.createElement("div")
+    newOrder.classList.add("orders-container", "NEWorders-container")
+    newOrder.textContent = "IMPORTARIA O SE CREARIAN LOS NUEVOS PEDIDOS CON EL FORMATO DEL DE ARRIBA"
+    document.querySelector("#order-list").appendChild(newOrder)
+} )
 // MODALES ABRIR // 
 
  const newInvoice = document.querySelector ("#NewInvoiceModal")
